@@ -1,0 +1,159 @@
+.all {
+    display: flex;
+    justify-content: center;
+}
+
+.principal {
+    display: flex;
+    width: 700px;
+    height: 390px;
+    color: white;
+    margin-top: 100px;
+}
+
+.card1 {
+    background-color: hsl(31, 77%, 52%);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card3 {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 30px;
+}
+
+.principal img {
+    padding: 30px;
+}
+
+.text {
+    padding: 30px;
+}
+
+.button {
+	background-color: aliceblue;
+    width: 60px;
+	align-items: center;
+    justify-content: center;
+	border-radius: 20px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 8px 15px 8px 15px;
+    margin-left: 30px;
+}
+
+.button:hover {
+    cursor: pointer;
+    opacity: .5;
+    transition: 0.5s;
+}
+
+.button1 {
+    color: hsl(31, 77%, 52%);
+}
+
+
+
+.button2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.button3 {
+    color: hsl(179, 100%, 13%);
+}
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 30px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+/*parte mobile*/
+
+@media(max-width: 768px) {
+    .principal {
+        flex-direction: column;
+    }
+
+    .button {
+        background-color: aliceblue;
+        width: 120px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 8px 15px 8px 40px;
+        margin-left: 30px;
+        margin-bottom: 33px;
+    }
+    
+    .principal {
+        display: flex;
+        width: 100%px;
+        height: 390px;
+        color: white;
+        margin-top: 0;
+    }
+
+    h1 {
+        margin-left: 70px;
+    }
+
+    .text {
+        padding: 70px;
+        font-size: 18px;
+    }
+
+    .card1 {
+        background-color: hsl(31, 77%, 52%);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        
+    }
+
+    .card2 {
+        background-color: hsl(184, 100%, 22%);
+    }
+    
+    .card3 {
+        background-color: hsl(179, 100%, 13%);
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .attribution { 
+        font-size: 6px; 
+        text-align: center; 
+        margin-top: 1200px;
+    }
+}
